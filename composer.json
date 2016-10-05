@@ -1,0 +1,41 @@
+{
+	"name": "keeko/admin-app",
+	"description": "Keeko Administration",
+	"type": "keeko-app",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "gossi"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"keeko\\application\\admin\\": "src/"
+		}
+	},
+	"require": {
+		"php": ">=5.4",
+		"keeko/composer-installer": "*"
+	},
+	"require-dev": {
+		"keeko/framework": "dev-master",
+		"keeko/core": "@dev",
+		"propel/propel": "@alpha",
+		"puli/repository": "@beta",
+		"puli/composer-plugin": "@beta",
+		"puli/twig-extension": "@beta",
+		"puli/url-generator": "@beta",
+		"puli/discovery": "@beta"
+	},
+	"extra": {
+		"keeko": {
+			"app": {
+				"title": "Keeko Admin Application",
+				"class": "keeko\\application\\admin\\AdminApplication",
+				"extension-points": {
+					"keeko.admin.menu": "schema/menu.json"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"title": "Admin Menu",
+	"type": "array",
+	"items": {
+        "type": "object",
+    	"properties": {
+    	    "id": {
+    	        "type": "string",
+    	        "description": "The id for this menu item (required)"
+    	    },
+    	    "parent": {
+    	        "type": "string",
+    	        "description": "The parent menu id (optional)"
+    	    },
+    	    "label": {
+    	    	"type": "string",
+    	    	"description": "The l10n key for the label"
+    	    },
+    	    "icon": {
+    	    	"type": "string",
+    	    	"description": "Font-Awesome icon string (anyway a cog will be used)"
+    	    },
+    	    "domain": {
+    	    	"type": "string",
+    	    	"description": "The locales domain"
+    	    },
+    	    "module": {
+    	    	"type": "string",
+    	    	"description": "The module in which the action is located"
+    	    },
+    	    "action": {
+    	    	"type": "string",
+    	    	"description": "The name of the action"
+    	    }
+    	},
+    	"required": ["id", "label"]
+    }
+}
