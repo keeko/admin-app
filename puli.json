@@ -1,6 +1,9 @@
 {
     "version": "1.0",
     "name": "keeko/admin-app",
+    "path-mappings": {
+        "/keeko/admin-app": "res/"
+    },
     "config": {
         "bootstrap-file": "vendor/autoload.php"
     },
@@ -52,6 +55,11 @@
         },
         "justinrainbow/json-schema": {
             "install-path": "vendor/justinrainbow/json-schema",
+            "installer": "composer",
+            "env": "dev"
+        },
+        "keeko/account": {
+            "install-path": "vendor/keeko/account",
             "installer": "composer",
             "env": "dev"
         },
